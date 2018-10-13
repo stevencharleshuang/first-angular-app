@@ -20,11 +20,18 @@
   Add Server
 </button>
 <p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
+<!-- Else Condition for ngIf -->
+<ng-template #noServer>
+  <p>
+    No server was created!
+  </p>
+</ng-template>
 <!-- <p [innerText]="allowNewServer"></p> -->
 <p>
   {{ serverCreationStatus }}
 </p>
-<app-server></app-server>
+<!-- Using Angular's for loop to output lists -->
+<app-server *ngFor="let server of servers"></app-server>
 <hr>
 <!-- Assignment Code -->
 <input 
