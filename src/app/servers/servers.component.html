@@ -16,9 +16,25 @@
   class="btn btn-primary"
   [disabled]="!allowNewServer"
   (click)="onCreateServer()"  
->Add Server</button>
+>
+  Add Server
+</button>
 <!-- <p [innerText]="allowNewServer"></p> -->
 <p>
   {{ serverCreationStatus }}
 </p>
 <app-server></app-server>
+<hr>
+<input 
+  type="text"
+  class="form-control"
+  [(ngModel)]="username"
+>
+<p>{{ username }}</p>
+<button 
+  class="btn btn-primary"
+  [disabled]="!username"
+  (click)="onUserSignIn()"  
+>
+  Sign In
+</button>
