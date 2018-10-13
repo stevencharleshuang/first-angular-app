@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-angular-app';
+  // this is a variable passed to the static html
+  name = 'Steve';
 }
