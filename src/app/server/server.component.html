@@ -1,6 +1,8 @@
 <!-- <p>The Server Component</p> -->
 <hr>
 <!-- square brackets indicate that we're binding to some property of the directive -->
+<!-- [ngStyle]="{cssProperty: callThis Method()}" -->
+<!-- [ngClass]="{property gets this pseudoclass: if this conidition is true}"-->
 <p 
   [ngStyle]="{backgroundColor: getColor()}"
   [ngClass]="{online: serverStatus === 'online'}"
